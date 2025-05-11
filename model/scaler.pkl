@@ -1,0 +1,10 @@
+import os
+import shutil
+
+# Create the model directory if it doesn't exist
+os.makedirs("model", exist_ok=True)
+
+# Move the uploaded scaler.pkl to the model folder
+shutil.move("/mnt/data/scaler.pkl", "model/scaler.pkl")
+
+print("scaler.pkl successfully moved to model/ directory.")
